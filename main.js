@@ -5,7 +5,7 @@ const SZULOELEM_SELECTOR = ".tartalom";
 const TARTALOM_URL = "ajax/sample/ahsoka_s01-hu.json";
 const MEZOK = [
     {"mezonev": "still_path", "cim": "", "tipus": "img", "format": "https://image.tmdb.org/t/p/w200{0}"},
-    {"mezonev": "episode_number", "cim": "Epizód #", "tipus": "num", "format": "{0}."},
+    {"mezonev": "episode_number", "cim": "Ep.#", "tipus": "num", "format": "{0}."},
     {"mezonev": "name", "cim": "Cím", "tipus": "text", "format": "{0}"},
     {"mezonev": "overview", "cim": "Összefoglaló", "tipus": "text", "format": "{0}"},
     {"mezonev": "runtime", "cim": "Játékidő", "tipus": "num", "format": "{0} perc"},
