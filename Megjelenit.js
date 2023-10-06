@@ -8,7 +8,7 @@ class ListaMegjelenit {
     }
 
     osszeallit() {
-        let html = '<table class="table"><thead><tr>';
+        let html = '<table class="table table-responsive"><thead><tr>';
         console.log(typeof(this.mezok));
         for (const mezo of this.mezok) {
             // console.log(mezo)
