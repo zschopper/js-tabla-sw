@@ -4,9 +4,16 @@ body {
     /* background-image: url("https://image.tmdb.org/t/p/original/mvoW41kdSxiobGZ9ONL1Tqrpt3h.jpg"); */
     background-position: top center;
     background-size: cover;
+    background-color: #15232c;
+    color: #faefcc;
 }
-body {
-    background-color: silver;
+
+table.table {
+    color: #faefcc;
+}
+
+.wrapper {
+    position: relative;
 }
 
 img.background {
@@ -40,7 +47,7 @@ img.background {
 
 .stars .percent:after {
     content: "\2605\2605\2605\2605\2605";
-    color: rgb(255, 200, 0);
+    color: #ffc800;
 }
 
 footer {
