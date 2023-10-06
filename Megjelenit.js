@@ -12,6 +12,7 @@ class ListaMegjelenit {
         for (const mezo of this.mezok) {
             html += `<th>${mezo.cim}</th>`;
         };
+        html += "</tr></thead><tbody>";
 
         for (const epizod of this.lista) {
             html += "<tr>";
@@ -37,7 +38,7 @@ class ListaMegjelenit {
             }
             html += "</tr>";
         };
-        html += "</table></div>"
+        html += "</tbody></table></div>"
         return html;
     }
 }
