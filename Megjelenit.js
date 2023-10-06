@@ -8,21 +8,15 @@ class ListaMegjelenit {
     }
 
     osszeallit() {
-        let html = '<table class="table table-responsive"><thead><tr>';
-        console.log(typeof(this.mezok));
+        let html = '<div class="table-responsive-lg"><table class="table"><thead><tr>';
         for (const mezo of this.mezok) {
-            // console.log(mezo)
             html += `<th>${mezo.cim}</th>`;
         };
-
-
-        console.log(this.lista)
 
         for (const epizod of this.lista) {
             html += "<tr>";
             for (const mezo of this.mezok) {
                 let adat = "";
-                // console.log(mezo.tipus)
                 let adat_fmt = mezo.format.replace(/\{0\}/, epizod[mezo.mezonev]);
                 switch (mezo.tipus) {
                     case "num":
@@ -37,13 +31,13 @@ class ListaMegjelenit {
                         adat = `<div class="stars"><div class="percent" style="width: ${adat_fmt * 10}%;"></div></div>`;
                         break;
                     default:
-                        adat  ="??";
+                        adat = "??";
                 }
                 html += `<td class="align-middle">${adat}</td>`;
             }
             html += "</tr>";
         };
-
+        html += "</table></div>"
         return html;
     }
 }
